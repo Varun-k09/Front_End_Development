@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sizing units</title>
+    <style>
+      .box {
+        box-sizing: border-box;
+        border: 2px solid black;
+        margin: auto;
+        background-color: aquamarine;
+        height: 10vh;
+        width: 80vw;
+      }
+      .container {
+        box-sizing: border-box;
+        border: 2px solid black;
+        margin: 23px auto;
+        background-color: aquamarine;
+        width: 80vw;
+        height: 50vh;
+        font-size: 18px;
+      }
+      .container p {
+        font-size: 2rem;
+        /* used to reduce the width at parent block */
+        width: 50%;
+      }
+      html {
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">hi css</div>
+    <div class="container">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
+        recusandae totam consequuntur cupiditate beatae nesciunt, corrupti,
+        ipsum architecto commodi odit pariatur ad optio voluptas saepe
+        praesentium magni, debitis soluta facilis?
+      </p>
+    </div>
+  </body>
+</html>

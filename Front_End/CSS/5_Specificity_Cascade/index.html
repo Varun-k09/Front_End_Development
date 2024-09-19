@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Element selector which have specifity of 1 */
+      h1 {
+        color: aqua;
+      }
+
+      /* class selector with specifity of 10 */
+      .yellow {
+        color: yellow;
+      }
+      /* class selector with specifity of 10 */
+      .cred {
+        color: red;
+      }
+      /* class selector with specifity of 10 */
+      .cpurple {
+        color: purple;
+      }
+      h1.yellow {
+        color: blueviolet;
+      }
+
+      /* this
+        example
+        is
+        for
+        attribute
+        selector
+        with
+        specifity
+        selector
+        10 */
+      [data-x="a"] {
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 class="yellow cred cpurple" data-x="a">CSS PROPERTY</h1>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Variable</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      :root {
+        --color: blue;
+        --seccolor: rgb(143, 245, 182);
+      }
+      .optoin {
+        background-color: var(--color);
+      }
+      .container {
+        background-color: var(--seccolor);
+      }
+
+      ul {
+        display: flex;
+      }
+
+      ul li {
+        list-style: none;
+        padding: 33px;
+        border: 8px solid black;
+        opacity: 0.5;
+      }
+
+      ul li:first-child {
+        --color: rgb(245, 133, 35);
+        background-color: var(--color, red);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="optoin">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+    <div class="container">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
+      perspiciatis pariatur voluptatem eius incidunt labore est, repellendus
+      distinctio eum fugiat.
+    </div>
+  </body>
+</html>
