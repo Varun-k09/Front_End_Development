@@ -1,0 +1,44 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 80vh;
+  width: 80vw;
+  position: relative;
+  background-color: blue;
+}
+
+/* Bouncing element */
+.bounce {
+  width: 100px;
+  height: 100px;
+  background-color: #ff5722;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: bouncex 3s linear infinite, bouncey 2s ease-out infinite alternate;
+}
+
+/* Bounce animation */
+@keyframes bouncex {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes bouncey {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 100%;
+  }
+}

@@ -1,0 +1,19 @@
+.container {
+  height: 500px;
+  width: 600px;
+  border: 2px solid black;
+  background-color: azure;
+  background-image: url(calm-weather-on-sea-ocean-260nw-2212935531.webp);
+
+  background-repeat: no-repeat;
+}
+
+img {
+  width: 500px;
+  height: 400;
+  /* object-fit: cover; */
+  object-fit: fill;
+  /* object-position: top right; */
+  /* object-fit:contain; */
+  object-position: 10px 20px;
+}
